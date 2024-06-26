@@ -25,4 +25,4 @@ jobs:
         username: root
         password: A\7w9WF.]5XWP/mCare
         script: |
-          rsync -avz --delete --exclude '.git' ./ /var/www/html/test/
+          rsync -avz --delete --exclude '.git' $GITHUB_WORKSPACE/ /var/www/html/test/
