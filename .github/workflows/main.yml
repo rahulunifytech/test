@@ -23,5 +23,6 @@ jobs:
       with:
         host: 139.59.5.82
         username: root
-        password: A\7w9WF.]5XWP/mCare
-        server-dir: /var/www/html/test/
+        password: ${{ secrets.SSH_PASSWORD }}
+        script: |
+          rsync -avz --delete --exclude '.git' $GITHUB_WORKSPACE/ /var/www/html/test/
