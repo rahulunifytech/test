@@ -1,1 +1,4 @@
-First merge
+<?php
+phpinfo();
+
+?>
